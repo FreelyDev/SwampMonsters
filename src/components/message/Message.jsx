@@ -41,7 +41,7 @@ export default function Message({messageOpen, setMessageOpen}) {
         setIsEmailFocus(true);
     };
     const onEmailFocusOut  = (e) => {
-        setIsEmailFocus();
+        setIsEmailFocus(false);
 
         // check mail is empty string
         if (mail === ''  && isEmailFocus){
@@ -67,7 +67,8 @@ export default function Message({messageOpen, setMessageOpen}) {
         setMail('')
         setMessageTxt('')
         console.log(messageTxt);
-        
+        setIsNameFocus(false)
+        setIsEmailFocus(false);
         setIsMailValid(true);
         setIsNameValid(true);
     }
