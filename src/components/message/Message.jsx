@@ -63,10 +63,11 @@ export default function Message({messageOpen, setMessageOpen}) {
 
     const onStartMessage = ()=>{
         setMessageOpen(!messageOpen);
+        
         setName('')
         setMail('')
         setMessageTxt('')
-        console.log(messageTxt);
+
         setIsNameFocus(false)
         setIsEmailFocus(false);
         setIsMailValid(true);
